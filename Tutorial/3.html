@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="parra">enter your age</p>
+    </div>
+    <input type="number" name="age" placeholder="age" id="age">
+   
+    <button id="button" onclick="greet">click</button>
+    <script>
+        //  greet(age)
+        // function greet(age){
+        //     if (age>20){
+        //         alert('you are adult')
+        //     }
+        //     else{
+        //         alert('you are a kid')
+        //     }
+        // }
+        console.log(document.getElementById('parra'))
+        console.log(document.getElementById('age'))
+        // document.getElementById('parra').style.color='red'
+        // document.getElementById('parra').style.backgroundColor='GREEN'
+        document.getElementById('button').innerHTML='please'
+        document.writeln("hello world")
+        
+
+        let elem= document.getElementsByClassName('container')
+        // console.log(ele)
+        // ele.classList.add("bg-pimary")
+        // elem.style.background='yellow'
+        console.log(document.getElementById('parra').innerText)
+        console.log(document.getElementById('parra').innerHTML)
+        console.log(document.getElementById('button').innerText)
+        console.log(document.getElementsByTagName('div'))
+
+        createElement=document.createElement('p')
+        createElement.innerHTML='THIS PARRA IS CREATED';
+        elem[0].appendChild(createElement);
+
+        createElement2=document.createElement('p')
+        createElement2.innerHTML='THIS PARRA IS bold';
+        elem[0].replaceChild(createElement2,createElement);
+
+        console.log(document.location)
+        console.log(document.title)
+        console.log(document.URL)
+
+        sel=document.querySelector('.container')
+        console.log(sel)
+
+
+    </script>
+</body>
+</html>
